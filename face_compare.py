@@ -42,12 +42,12 @@ def compare_faces(image_path1, image_path2):
 image_path1 = 'images/v1.jpeg'
 image_path2 = 'images/v2.jpg'
 #image_path2 = 'images/drdilip.png'
-
+print(image_path2)
 # Compare faces
 comparison_result = compare_faces(image_path1, image_path2)
 print(comparison_result)
 
-if  comparison_result != False:
+if any(comparison_result):
     print("The faces match!")
 else:
     print("The faces do not match.")
